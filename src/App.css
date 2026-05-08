@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background: linear-gradient(135deg, #f0f4ff 0%, #f8fafc 100%);
+  min-height: 100vh;
+}
+
+.app-layout {
+  background: transparent !important;
+  min-height: 100vh;
+}
+
+/* Typography Enhancements */
+.gradient-text {
+  background: linear-gradient(135deg, #4f46e5 0%, #db2777 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  background: #e0e7ff;
+  border-radius: 40px;
+  margin-bottom: 16px;
+  color: #4f46e5;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Card Styling */
+.glass-card {
+  border-radius: 20px !important;
+  border: 1px solid rgba(255, 255, 255, 0.8) !important;
+  background: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(12px);
+  box-shadow:
+    0 20px 40px rgba(15, 23, 42, 0.04),
+    0 1px 3px rgba(0, 0, 0, 0.02) !important;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  box-shadow:
+    0 24px 48px rgba(15, 23, 42, 0.08),
+    0 1px 3px rgba(0, 0, 0, 0.02) !important;
+  transform: translateY(-2px);
+}
+
+/* Form Enhancements */
+.ant-form-item-label > label {
+  font-weight: 600 !important;
+  color: #334155 !important;
+  font-size: 0.95rem !important;
+}
+
+.generate-btn {
+  background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%) !important;
+  border: none !important;
+  height: 54px !important;
+  font-size: 1.1rem !important;
+  font-weight: 600 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2) !important;
+  transition: all 0.3s ease !important;
+}
+
+.generate-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  box-shadow: 0 14px 28px rgba(79, 70, 229, 0.3) !important;
+}
+
+/* Markdown Formatting */
+.markdown-container {
+  line-height: 1.8;
+  color: #334155;
+  font-size: 16px;
+  padding: 10px;
+}
+
+.markdown-container h1,
+.markdown-container h2,
+.markdown-container h3 {
+  color: #0f172a;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+}
+
+.markdown-container pre {
+  background: #0f172a !important;
+  color: #f8fafc;
+  padding: 20px;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.markdown-container code {
+  font-family: "Consolas", "Courier New", monospace;
+  background: #f1f5f9;
+  padding: 3px 6px;
+  border-radius: 6px;
+  color: #db2777;
+  font-size: 0.9em;
+}
+
+.markdown-container pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+}
+
+.markdown-container blockquote {
+  border-left: 4px solid #4f46e5;
+  margin: 0;
+  padding-left: 16px;
+  color: #64748b;
+  font-style: italic;
+  background: #f8fafc;
+  padding: 12px 16px;
+  border-radius: 0 8px 8px 0;
+}
